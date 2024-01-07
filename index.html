@@ -1,116 +1,96 @@
 <!DOCTYPE html>
-
-
-<!-- - Linear Algebra and Regression-->
-<!-- - 1 Vectors-->
-<!-- - 1.1 Magnitude (Norm)-->
-<!-- - 1.2 Direction (Unit Vector)-->
-<!-- - 1.3 Vector Decomposition (Components)-->
-<!-- - 1.4 Distance (Euclidean Distance)-->
-<!-- - 1.5 Dot Product (Scalar Product)-->
-<!-- - 1.6 Angle Between Vectors (Cosine Similarity)-->
-<!-- - 1.7 Vector Projection (Scalar Projection)-->
-<!-- - 1.8 Cross Product (Vector Product)-->
-<!-- - 1.9 Dot Product vs Cross Product-->
-<!-- - 1.10 Orthogonality (Perpendicularity)-->
-<!-- - 1.11 Linear Independence-->
-<!-- - 2 Matrices-->
-<!-- - 2.1 Definition and Notation-->
-<!-- - 2.1.1 Difference between Matrix and Vector-->
-<!-- - 2.2 Matrix as a System of Linear Equations-->
-<!-- - 2.3 Matrix as Vectors-->
-<!-- - 2.4 Matrix Operations-->
-<!-- - 2.4.1 Matrix Addition-->
-<!-- - 2.4.2 Scalar Multiplication-->
-<!-- - 2.4.3 Matrix Multiplication-->
-<!-- - 2.5 Linear Transformation-->
-<!-- - 2.5.1 Linear Transformation - Identity Matrix-->
-<!-- - 2.5.2 Linear Transformation - Reflection Matrix-->
-<!-- - 2.5.4 Linear Transformation - Shear Matrix-->
-<!-- - 2.6 Matrix Determinant-->
-<!-- - 2.7 Matrix Rank-->
-<!-- - 2.8 Row Echelon Form-->
-<!-- - 2.9 Singular Matrix-->
-<!-- - 2.10 Matrix Transpose-->
-<!-- - 2.11 Matrix Inverse-->
-<!-- - 2.12 Eigenvalues and Eigenvectors-->
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markmap</title>
-    <style>
-      svg.markmap {
-        width: 100%;
-        height: 100vh;
-      }
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.2"></script>
-  </head>
-  <body>
-    <div class="markmap">
-      <script type="text/template">
-        ---
-        markmap:
-          maxWidth: 400
-          colorFreezeLevel: 4
-        ---
 
-        - Linear Algebra and Regression
-            - **1 Vectors**
-                - <br>
-                  **1.1: Magnitude (Norm)**
-                  size of a Vector
-                  $$\left\lVert \vec{v} \right\rVert = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}$$
-                  <br>
-                - <br>
-                  **1.2: Direction (Unit Vector)**
-                  direction of a Vector
-                  $$\vec{\hat{v}} = \frac{\vec{v}}{\left\lVert \vec{v} \right\rVert}$$
-                  <br>
-                - <br>
-                  **1.3: Vector Decomposition (Components)**
-                  break a Vector into its components
-                  $$\vec{v} = \vec{v}_1 + \vec{v}_2 + \cdots + \vec{v}_n$$
-                  <br>
-                - <br>
-                  **1.4: Distance (Euclidean Distance)**
-                  distance between two points
-                  $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
-                  <br>
-                - <br>
-                    **1.5: Dot Product (Scalar Product)**
-                    scalar projection of one Vector onto another
-                    $$\vec{a} \cdot \vec{b} = \left\lVert \vec{a} \right\rVert \left\lVert \vec{b} \right\rVert \cos{\theta}$$
-                    <br>
-                - <br>
-                    **1.6: Angle Between Vectors (Cosine Similarity)**
-                    angle between two Vectors
-                    $$\cos{\theta} = \frac{\vec{a} \cdot \vec{b}}{\left\lVert \vec{a} \right\rVert \left\lVert \vec{b} \right\rVert}$$
-                    <br>
-                - <br>
-                    **1.7: Vector Projection (Scalar Projection)**
-                    scalar projection of one Vector onto another
-                    $$\text{proj}_{\vec{b}}{\vec{a}} = \frac{\vec{a} \cdot \vec{b}}{\left\lVert \vec{b} \right\rVert}$$
-                    <br>
-                - <br>
-                    **1.8: Cross Product (Vector Product)**
-                    vector perpendicular to two Vectors
-                    $$\vec{a} \times \vec{b} = \left\lVert \vec{a} \right\rVert \left\lVert \vec{b} \right\rVert \sin{\theta} \vec{n}$$
-                    <br>
-                - <br>
-                    **1.9: Orthogonality (Perpendicularity)**
-                    two Vectors are perpendicular
-                    $$\vec{a} \cdot \vec{b} = 0$$
-                    <br>
-                - <br>
-                    **1.10: Linear Independence**
-                    two Vectors are linearly independent if neither is a scalar multiple of the other (they are not parallel)
-                    $$c_1 \vec{v}_1 + c_2 \vec{v}_2 + \cdots + c_n \vec{v}_n = 0$$
-                    <br>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markmap</title>
+  <style>
+    svg.markmap {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.2"></script>
+</head>
+
+<body>
+  <div class="markmap">
+    <script type="text/template">
+      ---
+      markmap:
+        maxWidth: 400
+        colorFreezeLevel: 5
+      ---
+      - **Machine Learning**
+        - **Pre-requisites**
+          - **Maths**
+            - **Calculus**
+              - **Foundation**
+                - **Functions**
+                - **Limits**
+                - **Continuity**
+              - **Differential Calculus**
+                - **Derivatives**
+                - **Partial Derivatives**
+              - **Integral Calculus**
+                - **Integration**
+              - **Multivariable Calculus**
+                - **Gradient**
+                - **Convex Functions**
+              - **Optimization Techniques**
+                - **Gradient Descent**
+                  - **Core Methods**
+                    - **Batch**
+                    - **Stochastic**
+                    - **Mini-Batch**
+                  - **Momentum-Based Methods**
+                    - **Momentum**
+                    - **Nesterov**
+                  - **Adaptive Methods**
+                    - **Adagrad**
+                    - **AdaDelta**
+                    - **RMSprop**
+                    - **Adam**
+                    - **AdaMax**
+            - **Linear Algebra**
+              - **Vectors**
+                - **Basic Operations**
+                  - **Magnitude**
+                  - **Direction**
+                  - **Vector Decomposition**
+                  - **Dot Product**
+                  - **Cross Product**
+                - **Advanced Concepts**
+                  - **Angle Between Vectors**
+                  - **Vector Projection**
+                  - **Orthogonality**
+                  - **Linear Independence**
+              - **Matrices**
+                - **Basic Operations**
+                  - **Matrix Addition**
+                  - **Scalar Multiplication**
+                  - **Matrix Multiplication**
+                - **Matrix Concepts**
+                  - **Matrix as a System of Linear Equations**
+                  - **Matrix as Vectors**
+                  - **Matrix Determinant**
+                  - **Matrix Rank**
+                  - **Matrix Transpose**
+                  - **Matrix Inverse**
+                - **Advanced Matrix Concepts**
+                  - **Transformations**
+                    - **Identity Matrix**
+                    - **Reflection Matrix**
+                    - **Shear Matrix**
+                  - **Matrix Decompositions**
+                    - **Row Echelon Form**
+                    - **Singular Matrix**
+                    - **Eigenvalues and Eigenvectors**
+        - **Core**
       </script>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
