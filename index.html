@@ -1,7 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-- **SWE**
+- **Machine Learning**
+        - **Pre-requisites**
+          - **Maths**
+            - **Calculus**
+              - **Foundation**
+                - **Functions**
+                - **Limits**
+                - **Continuity**
+              - **Differential Calculus**
+                - **Derivatives**
+                - **Partial Derivatives**
+              - **Integral Calculus**
+                - **Integration**
+              - **Multivariable Calculus**
+                - **Gradient**
+                - **Convex Functions**
+              - **Optimization Techniques**
+                - **Gradient Descent**
+                  - **Core Methods**
+                    - **Batch**
+                    - **Stochastic**
+                    - **Mini-Batch**
+                  - **Momentum-Based Methods**
+                    - **Momentum**
+                    - **Nesterov**
+                  - **Adaptive Methods**
+                    - **Adagrad**
+                    - **AdaDelta**
+                    - **RMSprop**
+                    - **Adam**
+                    - **AdaMax**
+            - **Linear Algebra**
+              - **Vectors**
+                - **Basic Operations**
+                  - **Magnitude**
+                  - **Direction**
+                  - **Vector Decomposition**
+                  - **Dot Product**
+                  - **Cross Product**
+                - **Advanced Concepts**
+                  - **Angle Between Vectors**
+                  - **Vector Projection**
+                  - **Orthogonality**
+                  - **Linear Independence**
+              - **Matrices**
+                - **Basic Operations**
+                  - **Matrix Addition**
+                  - **Scalar Multiplication**
+                  - **Matrix Multiplication**
+                - **Matrix Concepts**
+                  - **Matrix as a System of Linear Equations**
+                  - **Matrix as Vectors**
+                  - **Matrix Determinant**
+                  - <br>**Matrix Rank**:
+                    <br># of linearly independent rows or columns in a matrix.
+                    <br>**OR**: How many real dimensions does the matrix span?
+                    <br>**E.g.**: 3x3 matrix with rank 2 spans a 2D plane in 3D space.
+                    $$\begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix}$$
+                    Rank of this matrix is 2 because the third row is a linear combination of the first two rows.
+                  - **Matrix Transpose**
+                  - **Matrix Inverse**
+                - **Advanced Matrix Concepts**
+                  - **Transformations**
+                    - **Identity Matrix**
+                    - **Reflection Matrix**
+                    - **Shear Matrix**
+                  - **Matrix Decompositions**
+                    - **Row Echelon Form**
+                    - **Singular Matrix**
+                    - **Eigenvalues and Eigenvectors**
+        - **Core**
+
+
+
+
+
+
+
+        - **SWE**
           - DSAlgo
             - Trees
               - BFS
@@ -60,89 +138,38 @@
       ---
       markmap:
         maxWidth: 400
-        colorFreezeLevel: 5
+        colorFreezeLevel: 3
       ---
       - **Machine Learning**
         - **Pre-requisites**
           - **Maths**
             - **Calculus**
-              - **Foundation**
-                - **Functions**
-                - **Limits**
-                - **Continuity**
-              - **Differential Calculus**
-                - **Derivatives**
-                - **Partial Derivatives**
-              - **Integral Calculus**
-                - **Integration**
-              - **Multivariable Calculus**
-                - **Gradient**
-                - **Convex Functions**
-              - **Optimization Techniques**
-                - **Gradient Descent**
-                  - **Core Methods**
-                    - **Batch**
-                    - **Stochastic**
-                    - **Mini-Batch**
-                  - **Momentum-Based Methods**
-                    - **Momentum**
-                    - **Nesterov**
-                  - **Adaptive Methods**
-                    - **Adagrad**
-                    - **AdaDelta**
-                    - **RMSprop**
-                    - **Adam**
-                    - **AdaMax**
             - **Linear Algebra**
-              - **Vectors**
-                - **Basic Operations**
-                  - **Magnitude**
-                  - **Direction**
-                  - **Vector Decomposition**
-                  - **Dot Product**
-                  - **Cross Product**
-                - **Advanced Concepts**
-                  - **Angle Between Vectors**
-                  - **Vector Projection**
-                  - **Orthogonality**
-                  - **Linear Independence**
-              - **Matrices**
-                - **Basic Operations**
-                  - **Matrix Addition**
-                  - **Scalar Multiplication**
-                  - **Matrix Multiplication**
-                - **Matrix Concepts**
-                  - **Matrix as a System of Linear Equations**
-                  - **Matrix as Vectors**
-                  - **Matrix Determinant**
-                  - <br>**Matrix Rank**: Max # of linearly independent rows or columns in a matrix. **OR**: How many max number of real dimensions does the matrix span? *Example*:
-                    $$\begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix}$$
-                    Reduce to row-echelon form:
-                    $(4, 5, 6) - 4 \times (1, 2, 3) = (0, -3, -6)$.
-                    $(7, 8, 9) - 7 \times (1, 2, 3) = (0, -6, -12)$.
-                    $(0, -3, -6) - 3 \times (0, -3, -6) = (0, 0, 0)$.
-                    $$\begin{bmatrix}1 & 2 & 3 \\ 0 & -3 & -6 \\ 0 & 0 & 0\end{bmatrix}$$
-                    **Matrix Rank = 2**. (3x3 matrix with rank 2 spans a 2D plane in 3D space). The rank tells us the maximum number of linearly independent column vectors in the matrix, which in this case is 2. This is why the calculated rank of the matrix is 2.
-                    <br>
-                  - **Matrix Transpose**
-                  - **Matrix Inverse**
-                - **Advanced Matrix Concepts**
-                  - **Transformations**
-                    - **Identity Matrix**
-                    - **Reflection Matrix**
-                    - **Shear Matrix**
-                  - **Matrix Decompositions**
-                    - **Row Echelon Form**: A form that has only the most crucial information about the matrix.
-                    - **Singular Matrix**
-                    - **Eigenvalues and Eigenvectors**
+            - **Linear Algebra and Regression**
+            - **Probability**
+            - **Probability Distribution**
+            - **Statistics**
         - **Core**
+          - **EDA**
+          - **Feature Engineering**
           - **Supervised Learning**
-            - **Bagging vs Boosting**
+            - **What**: Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs.
+            - **Why**: Supervised learning algorithms are used when the output is classified or labeled. Examples of supervised learning: Regression, Decision Tree, Random Forest, KNN, Logistic Regression etc.
+            - **How**: Supervised learning algorithms are trained using labeled dataset. Examples of supervised learning: Regression, Decision Tree, Random Forest, KNN, Logistic Regression etc.
+            - **Regression Algorithms**
+            - **Classifications Algorithms**
+            - **Bagging & Boosting Techniques**
           - **Unsupervised Learning**
+              - **What**: Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses.
+              - **Why**: Unsupervised learning algorithms are used to find structure in the data, like grouping or clustering of data points.
+              - **How**: Unsupervised learning algorithms are trained using unlabeled dataset. Examples of unsupervised learning: Apriori algorithm, K-means.
             - **Unsupervised Learning**
             - **Matrix Factorization**
             - **k-means Clustering**
             - **Hierarchical & Density-Based Clustering**
+          - **Supervised vs Unsupervised Learning**
+            - **Supervised**: Train model with input:output pairs. Model then predicts output for new input based on training.
+            - **Unsupervised**: Train model with input only. Model then predicts output for new input
       </script>
       </div>
 </body>
