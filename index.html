@@ -1,42 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-        - **SWE**
-          - DSAlgo
-            - Trees
-              - BFS
-              - DFS
-                - Top-down DFS
-                  - 513. Find Bottom Left Tree Value
-                  - 314. Binary Tree Vertical Order Traversal
-                  - 987. Vertical Order Traversal of a Binary Tree
-                  - 545. Boundary of Binary Tree
-                  - 156. Binary Tree Upside Down
-                  - 100. Same Tree
-                  - 101. Symmetric Tree
-                  - 116. Populating Next Right Pointers in Each Node
-                  - 117. Populating Next Right Pointers in Each Node II
-                  - Clone a binary tree
-                  - 617. Merge Two Binary Trees
-                - Bottom-up DFS
-                  - 110. Balanced Binary Tree
-                  - 98. Validate Binary Search Tree
-                  - 333. Largest BST Subtree
-                  - 687. Longest Univalue Path
-                  - 124. Binary Tree Maximum Path Sum
-          - System Design
-          - Other
-            - OOP
-            - DBMS
-            - OS
-            - Networking
-            - Web
-            - Coding
-            - Testing
-            - Debugging
-            - Deployment
-            - Security
--->
 
 <head>
   <meta charset="UTF-8" />
@@ -62,133 +25,174 @@
         maxWidth: 400
         colorFreezeLevel: 3
       ---
-      - **Plan**
-        - **Sun Jan 14**
-          - **Mon** Jan 8
-            - **Unsupervised - 1** Lecture
-          - **Tue** Jan 9
-            - **Unsupervised - 1** Assignment
-            - **Unsupervised - 2** Lecture
-          - **Wed** Jan 10
-            - **Unsupervised - 2** Assignment
-            - **EDA -** Lecture
-            - **EDA -** Assignment
-          - **Thu** Jan 11
-            - **Regression -** Lecture
-            - **Regression -** Assignment
-          - **Fri** Jan 12
-            - **Buffer**
-          - **Sat** Jan 13
-            - **Buffer**
-      - **Machine Learning**
-        - **Pre-requisites**
-          - **Maths**
-            - **Calculus**
-              - **Foundation**
-                - **Functions**
-                - **Limits**
-                - **Continuity**
-              - **Differential Calculus**
-                - **Derivatives**
-                - **Partial Derivatives**
-              - **Integral Calculus**
-                - **Integration**
-              - **Multivariable Calculus**
-                - **Gradient**
-                - **Convex Functions**
-              - **Optimization Techniques**
-                - **Gradient Descent**
-                  - **Core Methods**
-                    - **Batch**
-                    - **Stochastic**
-                    - **Mini-Batch**
-                  - **Momentum-Based Methods**
-                    - **Momentum**
-                    - **Nesterov**
-                  - **Adaptive Methods**
-                    - **Adagrad**
-                    - **AdaDelta**
-                    - **RMSprop**
-                    - **Adam**
-                    - **AdaMax**
-            - **Linear Algebra**
-              - **Vectors**
-                - **Basic Operations**
-                  - **Magnitude**
-                  - **Direction**
-                  - **Vector Decomposition**
-                  - **Dot Product**
-                  - **Cross Product**
-                - **Advanced Concepts**
-                  - **Angle Between Vectors**
-                  - **Vector Projection**
-                  - **Orthogonality**
-                  - **Linear Independence**
-              - **Matrices**
-                - **Basic Operations**
-                  - **Matrix Addition**
-                  - **Scalar Multiplication**
-                  - **Matrix Multiplication**
-                - **Matrix Concepts**
-                  - **Matrix as a System of Linear Equations**
-                  - **Matrix as Vectors**
-                  - **Matrix Determinant**
-                  - <br>**Matrix Rank**:
-                    <br># of linearly independent rows or columns in a matrix.
-                    <br>**OR**: How many real dimensions does the matrix span?
-                    <br>**E.g.**: 3x3 matrix with rank 2 spans a 2D plane in 3D space.
-                    $$\begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix}$$
-                    Rank of this matrix is 2 because the third row is a linear combination of the first two rows.
-                  - **Matrix Transpose**
-                  - **Matrix Inverse**
-                - **Advanced Matrix Concepts**
-                  - **Transformations**
-                    - **Identity Matrix**
-                    - **Reflection Matrix**
-                    - **Shear Matrix**
-                  - **Matrix Decompositions**
-                    - **Row Echelon Form**
-                    - **Singular Matrix**
-                    - **Eigenvalues and Eigenvectors**
-        - **Core**
-          - **EDA**
-            - ...
-            - ...
-            - ...
-            - ...
-            - ...
-          - **Feature**<br>**Engineering**
-            - ...
-            - ...
-            - ...
-            - ...
-            - ...
-          - **Supervised & Unsupervised Learning**
-            - <br><br>**Supervised Learning**
-              - **Basics**
-                - <br>**What**: ...
-                - <br>**Why**: ...
-                - <br>**How**: ...
-              - **Types**
-                - **Regression Algorithms**
-                - **Classifications Algorithms**
-                - **Bagging & Boosting Techniques**
-            - **Supervised**<br>..........vs..........<br>**Unsupervised**
-              - <img src="./images/sup-vs-unsup-1.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="111">
-                - <br><br><br><img src="./images/sup-vs-unsup-2.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="224">
-                  - <img src="./images/sup-vs-unsup-3.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="132">
-            - <br><br>**Unsupervised Learning**
-              - **Basics**
-                - <br><br><br>**What**: It learns hidden patterns or intrinsic structures in the data.
-                - **Why**: Unsupervised learning algorithms are used to find structure in the data, like grouping or clustering of data points.
-                - **How**: Unsupervised learning algorithms are trained using unlabeled dataset. Examples of unsupervised learning: Apriori algorithm, K-means.
-              - **Coming up** (delete me)
-                - **Unsupervised Learning**
-                - **Matrix Factorization**
-                - **k-means Clustering**
-                - **Hierarchical & Density-Based Clustering**
-
-
+- **Plan**
+  - **Sun Jan 14**
+    - **Mon** Jan 8
+      - **Unsupervised - 1** Lecture
+    - **Tue** Jan 9
+      - **Unsupervised - 1** Assignment
+      - **Unsupervised - 2** Lecture
+    - **Wed** Jan 10
+      - **Unsupervised - 2** Assignment
+      - **EDA -** Lecture
+      - **EDA -** Assignment
+    - **Thu** Jan 11
+      - **Regression -** Lecture
+      - **Regression -** Assignment
+    - **Fri** Jan 12
+      - **Buffer**
+    - **Sat** Jan 13
+      - **Buffer**
+- **Machine Learning**
+  - **Pre-requisites**
+    - **Maths**
+      - **Calculus**
+        - **Foundation**
+          - **Functions**
+          - **Limits**
+          - **Continuity**
+        - **Differential Calculus**
+          - **Derivatives**
+          - **Partial Derivatives**
+        - **Integral Calculus**
+          - **Integration**
+        - **Multivariable Calculus**
+          - **Gradient**
+          - **Convex Functions**
+        - **Optimization Techniques**
+          - **Gradient Descent**
+            - **Core Methods**
+              - **Batch**
+              - **Stochastic**
+              - **Mini-Batch**
+            - **Momentum-Based Methods**
+              - **Momentum**
+              - **Nesterov**
+            - **Adaptive Methods**
+              - **Adagrad**
+              - **AdaDelta**
+              - **RMSprop**
+              - **Adam**
+              - **AdaMax**
+      - **Linear Algebra**
+        - **Vectors**
+          - **Basic Operations**
+            - **Magnitude**
+            - **Direction**
+            - **Vector Decomposition**
+            - **Dot Product**
+            - **Cross Product**
+          - **Advanced Concepts**
+            - **Angle Between Vectors**
+            - **Vector Projection**
+            - **Orthogonality**
+            - **Linear Independence**
+        - **Matrices**
+          - **Basic Operations**
+            - **Matrix Addition**
+            - **Scalar Multiplication**
+            - **Matrix Multiplication**
+          - **Matrix Concepts**
+            - **Matrix as a System of Linear Equations**
+            - **Matrix as Vectors**
+            - **Matrix Determinant**
+            - <br>**Matrix Rank**:
+              <br># of linearly independent rows or columns in a matrix.
+              <br>**OR**: How many real dimensions does the matrix span?
+              <br>**E.g.**: 3x3 matrix with rank 2 spans a 2D plane in 3D space.
+              $$\begin{bmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{bmatrix}$$
+              Rank of this matrix is 2 because the third row is a linear combination of the first two rows.
+            - **Matrix Transpose**
+            - **Matrix Inverse**
+          - **Advanced Matrix Concepts**
+            - **Transformations**
+              - **Identity Matrix**
+              - **Reflection Matrix**
+              - **Shear Matrix**
+            - **Matrix Decompositions**
+              - **Row Echelon Form**
+              - **Singular Matrix**
+              - **Eigenvalues and Eigenvectors**
+  - **Core**
+    - **EDA**
+      - ...
+      - ...
+      - ...
+      - ...
+      - ...
+    - **Feature**<br>**Engineering**
+      - ...
+      - ...
+      - ...
+      - ...
+      - ...
+    - **Supervised & Unsupervised Learning**
+      - <br><br>**Supervised Learning**
+        - **Basics**
+          - <br>**What**: ...
+          - <br>**Why**: ...
+          - <br>**How**: ...
+        - **Types**
+          - **Regression Algorithms**
+          - **Classifications Algorithms**
+          - **Bagging & Boosting Techniques**
+      - **Supervised**<br>..........vs..........<br>**Unsupervised**
+        - <img src="./images/sup-vs-unsup-1.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="111">
+          - <br><br><br><img src="./images/sup-vs-unsup-2.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="224">
+            - <img src="./images/sup-vs-unsup-3.jpg" alt="Supervised vs Unsupervised Learning" width="300" height="132">
+      - <br><br>**Unsupervised Learning**
+        - **Basics**
+          - <br><br><br>**What**: It learns hidden patterns/structures in the data.
+          - **Why**: To discover:
+            - clusters of similar data points
+            - graph structures ?? ❌: TODO ??
+            - latent factors, i.e. reducing the dimensionality of the data.
+        - **Types**:
+          - <br><br>**1 Dimensionality Reduction**:
+            Reducing dimensionality (# of features) of the data while preserving the essential information.
+            <img src="images/USML-dimensionality-reduction.png" height="100" />
+            - **Only KEEP MOST IMPORTANT features**
+              (Feature Selection) No modification to the
+              features. Just select the most important ones.
+              - <br><br>**Backward Elimination**: Start with all features and remove one by one.
+              - <br><br>**Forward Selection**: Start with no features and add one by one.
+              - <br><br>**Random Forest**: 🚨: TODO
+                Something to do with creating multiple decision trees, voting on their predictions. 
+                Feature's importance $\propto$ change in prediction when something about the feature is changed.
+                <img src="images/USML-dimensionality-reduction-random-forest.png" width="100" height="100" />
+            - **Find NEW combinations of features**
+              (Feature Extraction) Create new features from the existing ones.
+              - **Linear Methods**
+                Pretty established, but can't capture complex patterns.
+                - <img src="images/USML-Dimensionality-reduction-PCA.png" width="100" height="100" /><img src="images/USML-Dimensionality-reduction-PCA2.jpg" width="200" height="100" />
+                  **PCA**: Principal Component Analysis
+                - **FA**: Factor Analysis
+                - **LDA**: Linear Discriminant Analysis
+                - **Truncated SVD**: Truncated Singular Value Decomposition
+              - **Non-linear Methods (Manifold Learning)**
+                Can capture complex patterns, but are computationally expensive.
+                - **Kernel PCA**
+                - **t-SNE**: t-Distributed Stochastic Neighbor Embedding
+                - **MDS**: Multi-Dimensional Scaling
+                - **Isomap**: Isometric Mapping
+          - <br><br>**2 Clustering**:
+            Grouping similar data points together.
+            <img src="images/USML-clustering.jpg" height="100" />
+            - **K-means**
+            - **Hierarchical**
+            - **Density-based**
+          - <br><br>**3 Association Rule Mining**:
+            Finding interesting relations between variables in large databases.
+            <img src="images/USML-association-rule-mining.jpg" height="100" />
+          - <br><br>**4 Anomaly Detection**:
+            Finding unusual data points in the data.
+            <img src="images/USML-anomaly-detection.png" height="100" />
+          - <br><br>**5 Generative modeling**:
+            Generating new data points from the existing ones.
+            <img src="images/USML-generative-modeling.png" height="100" />
+          - <br><br>**6 Visualization - t-SNE**:
+            Visualizing high-dimensional data in 2D/3D.
+            <img src="images/USML-t-SNE.png" height="100" />
       </script>
       </div>
 </body>
