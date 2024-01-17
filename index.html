@@ -21,8 +21,12 @@
     <script type="text/template">
       ---
       markmap:
-        maxWidth: 300
+        <!-- maxWidth:  -->
         colorFreezeLevel: 2
+        duration: 0
+        initialExpandLevel: -1
+        extraJs: [""]
+        extraCss: [""]
       ---
 
       - **Machine Learning**
@@ -96,13 +100,13 @@
                     - **Singular Matrix**
                     - **Eigenvalues and Eigenvectors**
         - **Core**
-          - **EDA** <!-- markmap: fold -->
+          - **EDA**
             - ...
             - ...
             - ...
             - ...
             - ...
-          - **Feature**<br>**Engineering** <!-- markmap: fold -->
+          - **Feature**<br>**Engineering**
             - ...
             - ...
             - ...
@@ -175,7 +179,95 @@
                 - <br><br>**6 Visualization - t-SNE**:
                   Visualizing high-dimensional data in 2D/3D. (see: Dimensionality Reduction $\to$ Non-linear Methods $\to$ t-SNE)
                   <img src="images/USML-t-SNE.png" height="100" />
-
+        - Machine Learning Engineering Steps
+          - <br>**Case**: *Forecasting Volcanic Eruption and Impact Assessment*
+            - **Project Planning and Analysis**
+              - **Problem Definition**: Clearly define the problem statement.
+              - **Feasibility Study**: Assess technical and economic feasibility.
+              - **Scope and Objective Setting**: Define the project's scope, goals, and KPIs.
+              - **Resource Assessment**: Evaluate and allocate necessary resources including team members, data, hardware, and software.
+            - **Data Acquisition and Management**
+              - **Data Sourcing**: Identify and collect data from internal and external sources.
+                - <br>**Synthetic Dataset**
+                  - <br>**Why**: $\because$ volcanic eruptions are rare
+                  - <br>**How**: alter ==parameters== of math model $\to$ simulate volcanic eruptions
+                  - <br>**Common** practice in the industry $\because$ of lack of real data.
+                  - <br>**Accuracy**: can be treated as ground truth.
+                    <br>**IMPORTANT**: In real world, validation of synthetic dataset is part of the MLE process.
+                  - <br>**Structure**
+                      - Constant ==parameters== for all volcanoes
+                        (**TODO**: Confirm this)
+                        - <br>**Poisson's ratio** (`v,0.25`)
+                        - <br>**Atmospheric Pressure** (`Patm,100000`)
+                        - <br>**Gravity** (`g,9.81`)
+                        - <br>**Radial Distance Tilt Station** (`r,500`)
+                      - Constant ==parameters== for all eruption
+                        observations for a
+                        **specific volcano**
+                        (**TODO**: Confirm this)
+                        - <br>**Sheer Modulus** (`G,10^11.12`)
+                        - <br>**Magma Density** (`rho,2200`)
+                        - <br>**Magma Viscosity** (`mu,10^3.51`)
+                        - <br>**Conduit Radius** (`rc,18`)
+                      - Variable ==parameters== for each
+                        **eruption observation**
+                        - <br>**Gas Mass** (`M,10^6.18`)
+                        - <br>**Standard Deviation** (`sigma,0.1`)
+                        - <br>**Tilt Angle At Eruption**
+                          (`tilt_erupt,3.1271nrad`)
+                          How big is the eruption. **TODO**: Confirm this.
+                          - [ ***TO PREDICT*** ]
+                        - <br>**Sensor Values Preceding the Eruption Event**
+                          Time Series Data
+                          - <br>**Seconds Before Eruption**: `-1052,-1051...-1,0` (Starting from 1052 seconds before the eruption event, every second, the sensor value is recorded)
+                          - <br>**Sensor values**: `-4.87775135323027e-12,-5.41769735416295e-11...2.74650112407467e-09,3.21582418048671e-09` ()
+              - **Data Storage**: Implement efficient data storage solutions.
+              - **Data Governance**: Ensure data security, privacy, and compliance with regulations.
+            - **Data Preprocessing**
+              - **Data Cleaning**: Address missing values, outliers, and errors.
+              - **Data Transformation**: Convert data into a suitable format for analysis.
+              - **Data Integration**: Combine data from different sources.
+              - **Data Reduction**: Reduce data dimensionality if necessary.
+            - **Exploratory Data Analysis (EDA)**
+              - **Statistical Analysis**: Perform statistical tests and analyses.
+              - **Visualization**: Create visual representations of data distributions and relationships.
+              - **Data Profiling**: Summarize data characteristics and identify patterns.
+            - **Feature Engineering**
+              - **Feature Creation**: Develop new features from existing data.
+              - **Feature Selection**: Identify and select significant features.
+              - **Feature Encoding**: Convert categorical data into a suitable format for modeling.
+              - **Feature Normalization/Standardization**: Scale features appropriately.
+            - **Model Development**
+              - **Algorithm Selection**: Choose suitable machine learning algorithms.
+              - **Model Training**: Train models using datasets.
+              - **Hyperparameter Tuning**: Optimize model performance.
+              - **Ensemble Techniques**: Combine multiple models to improve performance.
+            - **Model Evaluation and Validation**
+              - **Model Testing**: Evaluate model performance on unseen data.
+              - **Validation Strategies**: Implement cross-validation, bootstrapping, etc.
+              - **Performance Metrics**: Utilize accuracy, precision, recall, F1-score, ROC-AUC, etc.
+              - **Error Analysis**: Investigate and understand model errors.
+            - **Model Deployment**
+              - **Deployment Strategy**: Decide on cloud vs on-premise, real-time vs batch processing.
+              - **Integration**: Integrate with existing systems and infrastructure.
+              - **Deployment Testing**: Ensure model stability and performance in production.
+            - **Model Monitoring and Maintenance**
+              - **Performance Monitoring**: Track model accuracy, efficiency, and other KPIs.
+              - **Model Updating**: Regularly update the model with new data.
+              - **Anomaly Detection**: Monitor for and investigate anomalies in model performance.
+            - **Documentation and Reporting**
+                - **Technical Documentation**: Detail the methodology, architecture, and code.
+                - **Business Reporting**: Communicate insights and business impact to stakeholders.
+                - **Regulatory Compliance**: Document compliance with relevant regulations.
+            - **Ethical Considerations and Compliance**
+                - **Ethical Review**: Regularly review the model's impact on fairness, privacy, and societal implications.
+                - **Legal Compliance**: Adhere to GDPR, HIPAA, and other relevant regulations.
+            - **Post-Deployment Activities**
+                - **User Training**: Educate end-users on how to interact with and interpret model outputs.
+                - **Feedback Collection**: Implement channels for collecting user feedback.
+                - **Continuous Improvement**: Use feedback for ongoing model and process improvements.
+        - <br>**Questions**:
+          - "ML 14 specifically"? when talking about Regression > case > synthetic dataset > accuracy.
     </script>
   </div>
 </body>
